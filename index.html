@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geodestic conversion</title>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+</head>
+<body>
+
+<h3>LLA to ECEF:</h3>
+<label>latitude</label>
+<input id="lat" value="10">
+<br/>
+<label>longitude</label>
+<input id="lon" value="12">
+<br/>
+<label>altitude</label>
+<input id="alt" value="20">
+<br/>
+<button id="LLAToECEF">LLAToECEF</button>
+<br/>
+<h5>Result:</h5>
+<div id="LLAToECEF_RESULT"></div>
+
+<br/><br/><br/>
+
+<h3>ECEF to LLA:</h3>
+<label>X</label>
+<input id="x" value="6144598.836391501">
+<br/>
+<label>Y</label>
+<input id="y" value="1306074.801504996">
+<br/>
+<label>Z</label>
+<input id="z" value="1100248.5477353614">
+<br/>
+<button id="ECEFToLLA">ECEFToLLA</button>
+<br/>
+<h5>Result:</h5>
+<div id="ECEFToLLA_RESULT"></div>
+
+
+<h3>Map: (Current User Location IP Marker)</h3>
+<p>Hint: click the pin to show a popup.</p>
+<div id="map" style="width: 100%; height: 400px;"></div>
+
+<script src="index.js"></script>
+</body>
+</html>
